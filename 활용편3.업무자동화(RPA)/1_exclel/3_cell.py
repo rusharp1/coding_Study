@@ -41,8 +41,7 @@ print("C1.value = ", ws["C1"].value)
 # 반복문을 이용해 랜덤 숫자 채우기
 for x in range(1,11):
     for y in range(1, 11):
-        # ws.cell(row=x, column=y, value=randint(0,100))
-        ws.cell(row=x, column=y, value = (x-1)*10 + y)
-
+        ws.cell(row=x, column=y, value=randint(0,100))
+        # ws.cell(row=x, column=y, value = (x-1)*10 + y)
 
 wb.save("sample.xlsx")

@@ -20,6 +20,5 @@ for row in ws.iter_rows(max_row=1):
 for cell in ws[ws.max_row]:
     cell.value = ""
 
-
 # 워크북 저장
 wb.save('sample.xlsx')
