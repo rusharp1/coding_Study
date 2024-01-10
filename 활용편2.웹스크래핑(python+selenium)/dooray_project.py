@@ -35,7 +35,7 @@ def wait_until_list(xpath_str):
 # 리뉴얼로 이동하기
 def go_to_renewal():
     ######### 리뉴얼 페이지로 이동하기 #########
-    # 화면을 키워 설정 아이콘 노출하게끔 하기.
+    # 화면을 키워 설정 아이콘 노출하기.
     browser.maximize_window()
     # 설정 선택하기
     renewal = wait_until("//span[@class='v2-icons-setting-white']")
