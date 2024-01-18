@@ -3,8 +3,8 @@ from appium.options.common.base import AppiumOptions
 from kakao_travel_insurance import *
 from datetime import datetime
 
-# adp_info = input("please insert idp code : ")
-adp_info = "RF9R501VDPW"
+adp_info = input("please insert idp code : ")
+# adp_info = "RF9R501VDPW" 
 options = AppiumOptions()
 options.load_capabilities({
 	"platformName": "Android",

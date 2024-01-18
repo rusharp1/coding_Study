@@ -1,9 +1,9 @@
 from appium.webdriver.common.appiumby import AppiumBy as By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 from selenium.webdriver.common.action_chains import ActionChains
 from appium.webdriver.common.touch_action import TouchAction
+import time
 
 # 특정 element를 찾을때까지 기다림.
 # XPATH를 사용함.
@@ -136,7 +136,7 @@ def chek_insurance(driver):
 def Choose_companion(driver):
     member = 1
     child = False
-    # 동행인 X : 혼자 가입하기
+    # 동행인 X : 혼자 가입하기 
     if member == 1:
         wait_until(driver,'//android.widget.Button[@text="혼자 가입할게요"]').click()
     # 동행인 O : 다음
